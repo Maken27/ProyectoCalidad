@@ -1,0 +1,55 @@
+<header class="header">
+  <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" style="color: white; font-size: 25px;" href="http://localhost:4200/">AureoStock CRUD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home">Empleados <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/form">Crear</a> En vez de colocar href, colocamos routerLink, para que sea más rápido la navegación
+        </li> 
+      </ul>
+    </div>
+  </nav>-->
+  <nav class="menu">
+    <input id ="menu__toggle" type="checkbox" class='menu__toggle'/>
+    <label for="menu__toggle" class="menu__toggle-label">
+      <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+        <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+      </svg>
+      <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+      </svg>
+    </label>
+    <ol class='menu__content'>
+      <li class="menu-item"><a href="/" style="font-size: 35px;">QualityProyect</a></li>
+      <li class="menu-item">
+        <a routerLink="/home" style="font-size: 24px;">Empleados</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a routerLink="/form" style="font-size: 20px;">Crear Empleado</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a routerLink="/inventario" style="font-size: 24px;">Destinos</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a routerLink="/producto" style="font-size: 20px;">Crear Pasaje</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a routerLink="/pantallas" style="font-size: 24px;">Generar</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a routerLink="/ap" style="font-size: 20px;">Vehiculos</a></li>
+        </ol>
+      </li>
+      <li class="menu-item"><a routerLink="/ventas" style="font-size: 24px">Ventas</a></li>
+    </ol>
+  </nav>
+  <br/>
+  <div class="container">
+  <router-outlet></router-outlet>
+  </div>
+  </header>

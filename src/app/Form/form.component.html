@@ -1,0 +1,22 @@
+<div class="login-box" >
+  <h2>Empleado</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="name" [(ngModel)]="employee.name" required="true">
+      <label>Usuario</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="addrees" [(ngModel)]="employee.address" required="true">
+      <label>Dirección</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="phone" [(ngModel)]="employee.phone" required="true">
+      <label>Teléfono</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="email" [(ngModel)]="employee.email" required="true">
+      <label>Email</label>
+    </div>
+    <a (click)="saveEmployee()" routerLink="#">Guardar</a>
+  </form>
+</div>
